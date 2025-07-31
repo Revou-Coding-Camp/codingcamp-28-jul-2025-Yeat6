@@ -8,6 +8,8 @@
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Link to external JavaScript file -->
+    <script src="js/script.js"></script>
 
 </head>
 <body>
@@ -20,8 +22,8 @@
         </div>
 
         <div class="navbar-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
+                <a href="#">Home</a>
+                <a href="#about">About Me</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#messages">Messages us</a>
 
@@ -31,13 +33,23 @@
 
     <main>
         <!-- Welcome Section -->
-        <h2 class="welcome">Hello Guest, Welcome To My Website</h2>
-        <p>This is My First Website</p>
+        <h2 class="welcome">Hello <span id="username"></span>, Welcome To My Website</h2>
+        <p>Enjoy your stay!</p>
 
         <!-- Home Banner -->
          <div class="home-banner">
-            <img src="" alt="">
+            <img src="https://picsum.photos/seed/picsum/900/400" alt="home-banner">
         </div>
+
+        <hr>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="about-title">About Me</h2>
+            <div class="about-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed volutpat elit. Sed ac neque at arcu tempus luctus eu ac enim. Mauris condimentum arcu ut metus condimentum, sit amet congue quam malesuada. Aliquam ligula nisl, vestibulum vitae velit in, porttitor mollis erat. Quisque vel nisl eu quam finibus malesuada. Ut vulputate lorem ligula, et vulputate mauris sagittis eget. Sed viverra sapien justo, nec laoreet augue malesuada a. Aenean quis finibus elit. Sed vestibulum mauris est, a gravida erat venenatis eu. Nulla ac sodales turpis. Integer euismod orci at purus ornare blandit. Integer pulvinar, augue fermentum euismod eleifend, eros est tincidunt turpis, ac fermentum risus mi blandit lorem.</p>
+                <img src="https://picsum.photos/seed/picsum/750/300" alt="about-img">
+            </div>
     </main>
 
 
