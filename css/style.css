@@ -1,9 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #c4bebe;
 }
+
+
 
 /* Navbar Styles */
 .navbar{
@@ -60,7 +66,9 @@ main{
 hr{
     margin: 20px 0;
     border: none;
-    border-top: 1px solid #ccc;
+    border-top: 3px solid #000000;
+    max-width: 1100px; /* Match .home-banner img max-width */
+    width: 100%;
 }
 
 .welcome{
@@ -83,9 +91,11 @@ p{
 }
 
 /* About Section Styles */
+
+
 .about-content{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 24px;
 }
 
@@ -95,14 +105,162 @@ p{
 }
 
 .about-content p{
-    max-width: 300px;
+    max-width: 450px;
     font-size: 18px;
     margin: 0;
+    display: flex;
+    overflow: auto;
 }
 
 .about-content img{
-    width: 775px;
+    width: 625px;
     height: 450px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/*Portolio Section Styles */
+.portofolio-title{
+    font-size: 24px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+
+/*Message Section Styles */
+.messages{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.messages-title{
+    font-size: 24px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.messages-content{
+    display: flex;
+    flex-direction: row;
+    gap: 48px; /* Increase gap between form and table */
+    align-items: flex-start;
+}
+
+.messages-content form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 450px;
+    max-width: 500px; /* Limit form width */
+    padding: 10px;    /* Make form box shorter */
+    border: 2px solid #52565c;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.messages-content form label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.messages-content form input[type="text"],
+.messages-content form input[type="date"],
+.messages-content form textarea,
+.messages-content form select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #52565c;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.messages-content form textarea,
+#message {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.messages-content form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #52565c;
+    background: #eaeaea;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.messages-content form button[type="submit"]:hover {
+    background: #52565c;
+    color: #fff;
+}
+
+.messages-content form .form-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.messages-content form .form-row label {
+    min-width: 120px;
+    margin-bottom: 0;
+}
+
+.messages-content form .form-row input,
+.messages-content form .form-row select,
+.messages-content form .form-row textarea {
+    flex: 1;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #52565c;
+    box-sizing: border-box;
+}
+
+.messages-content form .form-row textarea {
+    min-height: 80px;
+    resize: vertical;
+    white-space: pre-wrap; /* ensures text wraps to new line */
+    overflow-wrap: break-word; /* breaks long words */
+}
+
+.message-display{
+    display: flex;
+    flex: 2;
+    min-width: 220px;
+    max-width: 500px;
+    padding-left: 24px; /* Add space between form and table */
+}
+
+.message-display table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.message-display th, .message-display td{
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Footer Styles */
+footer{
+    background-color: #52565c;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
