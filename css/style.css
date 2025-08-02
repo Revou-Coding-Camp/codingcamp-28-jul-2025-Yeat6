@@ -381,6 +381,18 @@ footer{
         font-size: 14px;
         padding: 12px 0;
     }
+
+    /* Responsive table: horizontal scroll on small screens */
+    .message-display table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .message-display th, .message-display td {
+        min-width: 120px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -393,6 +405,7 @@ footer{
         margin-bottom: 10px;
     }
     .navbar-links {
+        font-size: 12px;
         margin-right: 0;
         gap: 8px;
     }
@@ -407,5 +420,44 @@ footer{
     .about-title,
     .portofolio-title {
         font-size: 18px;
+    }
+
+    /* Card-style table rows for extra small screens */
+    .message-display table, 
+    .message-display thead, 
+    .message-display tbody, 
+    .message-display tr {
+        display: block;
+        width: 100%;
+    }
+    .message-display thead {
+        display: none;
+    }
+    .message-display tr {
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        padding: 8px;
+    }
+    .message-display td {
+        display: flex;
+        width: 100%;
+        padding: 8px 8px 8px 0;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        align-items: center;
+    }
+    .message-display td:last-child {
+        border-bottom: none;
+    }
+    .message-display td:before {
+        content: attr(data-label) ": ";
+        font-weight: bold;
+        min-width: 90px;
+        color: #333;
+        flex-shrink: 0;
     }
 }

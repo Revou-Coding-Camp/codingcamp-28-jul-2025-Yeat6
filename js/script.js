@@ -99,9 +99,9 @@ function addMessageToTable() {
     const table = document.getElementById("message-table").getElementsByTagName('tbody')[0];
     const newRow = table.insertRow();
 
-    newRow.insertCell(0).textContent = name;
-    newRow.insertCell(1).textContent = email;
-    newRow.insertCell(2).textContent = gender;
-    newRow.insertCell(3).textContent = message;
+    newRow.insertCell(0).outerHTML = `<td data-label="Name">${name}</td>`;
+    newRow.insertCell(1).outerHTML = `<td data-label="Email">${email}</td>`;
+    newRow.insertCell(2).outerHTML = `<td data-label="Gender">${gender}</td>`;
+    newRow.insertCell(3).outerHTML = `<td data-label="Message">${message}</td>`;
 }
 
