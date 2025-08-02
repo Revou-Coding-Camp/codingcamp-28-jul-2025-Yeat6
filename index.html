@@ -23,7 +23,7 @@
 
         <div class="navbar-links">
                 <a href="#">Home</a>
-                <a href="#about">About Me</a>
+                <a href="#about">Our Profile</a>
                 <a href="#portfolio">Portfolio</a>
                 <a href="#messages">Messages us</a>
 
@@ -33,22 +33,22 @@
 
     <main>
         <!-- Welcome Section -->
-        <h2 class="welcome">Hello <span id="username"></span>, Welcome To My Website</h2>
+        <h2 class="welcome">Hello <span id="username"></span>, Welcome To The PixelParts Website</h2>
         <p>Enjoy your stay!</p>
 
         <!-- Home Banner -->
          <div class="home-banner">
-            <img src="https://picsum.photos/seed/picsum/900/400" alt="home-banner">
+            <img src="src/banner.jpg" alt="home-banner">
         </div>
 
         <hr>
 
-        <!-- About Section -->
+        <!-- Our Profile Section -->
         <div id="about" class="about">
-            <h2 class="about-title">About Me</h2>
+            <h2 class="about-title">Our Profile</h2>
             <div class="about-content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed volutpat elit. Sed ac neque at arcu tempus luctus eu ac enim. Mauris condimentum arcu ut metus condimentum, sit amet congue quam malesuada. Aliquam ligula nisl, vestibulum vitae velit in, porttitor mollis erat. Quisque vel nisl eu quam finibus malesuada. Ut vulputate lorem ligula, et vulputate mauris sagittis eget. Sed viverra sapien justo, nec laoreet augue malesuada a. Aenean quis finibus elit. Sed vestibulum mauris est, a gravida erat venenatis eu. Nulla ac sodales turpis. Integer euismod orci at purus ornare blandit. Integer pulvinar, augue fermentum euismod eleifend, eros est tincidunt turpis, ac fermentum risus mi blandit lorem. Vivamus fringilla non justo venenatis tempor. Proin eget sem vel nunc pellentesque egestas. Aliquam erat volutpat. Phasellus faucibus feugiat libero non dapibus. In volutpat erat egestas, efficitur est eget, imperdiet ligula. Vivamus sit amet venenatis sem. Donec non dictum nisl. Sed quis rutrum turpis, ultrices feugiat purus. Proin sed suscipit ante, ac semper felis. Aenean vel leo neque. Nunc at felis ut tortor tempor hendrerit eu nec nibh.</p>
-                <img src="https://picsum.photos/seed/picsum/750/300" alt="about-img">
+                <p>PixelParts is a modern computer store specializing in high-quality hardware, accessories, and custom PC solutions for gamers, professionals, and tech enthusiasts. We offer a curated selection of trusted brands, including processors, graphic cards, motherboards, storage, and peripherals, all backed by expert support and honest pricing. Whether you're building a powerful gaming rig, upgrading your workstation, or replacing essential components, our knowledgeable team is ready to help with tailored advice and reliable service. PixelParts is committed to making tech accessible and enjoyable for everyone through a seamless shopping experience, both online and in-store. We regularly update our inventory to ensure customers have access to the latest innovations in performance and reliability. With a growing base of loyal customers, we strive to be more than just a store — we’re a trusted tech partner for your digital journey. This is where performance meets precision, and every byte truly matters. We believe that great hardware should empower creativity, productivity, and play — and we're here to support every step of that experience.</p>
+                <img src="src/profile_banner.jpg" alt="about-img">
 
             </div>
         </div>
@@ -58,11 +58,18 @@
         <!-- Portfolio Section -->
          <div class="portofolio" id="portfolio">
             <h2 class="portofolio-title">My Portfolio</h2>
+            <div class="portofolio-slider">
+                <img src="src/T-Shirt 1 Mockup (3).jpg" alt="portfolio-img1">
+                <img src="src/T-Shirt Mockup (5).jpg" alt="portfolio-img2">
+                <img src="src/fe_project0.jpeg" alt="portfolio-img3">
+                <img src="src/order_code.jpg" alt="portfolio-img4">
+                <img src="src/feproject1.jpeg" alt="portfolio-img5">
+                <img src="src/controller_code.jpg" alt="portfolio-img6">
+            </div>
+
             <div class="portofolio-content">
-                <img src="https://picsum.photos/seed/picsum/300/200" alt="portfolio-img1">
-                <img src="https://picsum.photos/seed/picsum/300/200" alt="portfolio-img2">
-                <img src="https://picsum.photos/seed/picsum/300/200" alt="portfolio-img3">
-                <img src="https://picsum.photos/seed/picsum/300/200" alt="portfolio-img4">
+                <p class="portfolio-description">Hello, my name is Ananta Panji Bhaskara. I am a Vocational High School student majoring in SIJA (Computer and Network Engineering), a field that focuses on computer systems, networking infrastructure, and information technology. My current focus is on Backend Web Development, where I’m actively learning and building projects using PHP as my primary programming language. I enjoy exploring how servers, databases, and APIs work together to power modern web applications<br>   In addition to coding, I also have a passion for graphic design and video editing, which I usually explore in my free time. These creative interests not only allow me to express myself visually but also complement my technical skills, especially when working on full-stack or multimedia-integrated projects. I am always eager to learn new technologies, improve my skills, and collaborate on meaningful tech-related projects that can make a real impact.</p>
+                <img class="portfolio-image" src="src/me.jpeg" alt="me">
             </div>
 
          </div>
@@ -79,8 +86,8 @@
                         <input type="text" id="name" name="name" placeholder="Name" required>
                     </div>
                     <div class="form-row">
-                        <label for="dob">Date of Birth :</label>
-                        <input type="date" id="dob" name="dob" required>
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-row">
                         <label for="gender">Gender :</label>
@@ -102,7 +109,7 @@
                         <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Date of Birth</th>
+                                <th>Email</th>
                                 <th>Gender</th>
                                 <th>Message</th>
                             </tr>
@@ -121,7 +128,7 @@
         </main>
 
     <footer>
-        <p>&copy; 2025 Panji Bhaskara. All rights reserved.</p>
+        <p>&copy; 2025 Bhaskara. All rights reserved.</p>
         <p>Follow me on <a href="https://www.instagram.com/bhaskara.docx?igsh=Y3h4NnMxbjVjc3E3">Instagram</a></p>
         <p>Contact: <a href="mailto:ananta0106bhaskara@gmail.com">ananta0106bhaskara@gmail.com</a></p>
 
